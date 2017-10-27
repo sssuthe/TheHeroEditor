@@ -81,7 +81,8 @@ ngOnInit(): void{
 }
 
  getHeroes(): void{
-	 this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+	 //this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+	 this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
  }
 //getting called from the click event of the hero list item
  onSelect(hero: Hero): void {
